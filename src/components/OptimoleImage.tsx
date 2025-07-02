@@ -1,6 +1,7 @@
-import React from 'react';
+import React from "react";
 
-interface OptimoleImageProps extends Omit<React.ImgHTMLAttributes<HTMLImageElement>, 'src'> {
+interface OptimoleImageProps
+  extends Omit<React.ImgHTMLAttributes<HTMLImageElement>, "src"> {
   src: string;
   width: number;
   height: number;
@@ -8,14 +9,14 @@ interface OptimoleImageProps extends Omit<React.ImgHTMLAttributes<HTMLImageEleme
   className?: string;
 }
 
-const OptimoleImage: React.FC<OptimoleImageProps> = ({ 
-  src, 
-  width, 
-  height, 
-  alt, 
-  className = '',
-  ...props 
-}) => {
+const OptimoleImage = ({
+  src,
+  width,
+  height,
+  alt,
+  className = "",
+  ...props
+}: OptimoleImageProps) => {
   return (
     <img
       data-opt-src={src}

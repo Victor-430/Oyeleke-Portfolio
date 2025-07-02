@@ -2,20 +2,17 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { ExternalLink } from "lucide-react";
-import { useOptimole } from '../utils/useOptimole';
-import OptimoleImage from './components/OptimoleImage';
-
+import { useOptimole } from "../utils/useOptimole";
+import OptimoleImage from "./OptimoleImage";
 
 const Projects = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
-
-  useOptimole({ 
-    apiKey: process.env.REACT_APP_OPTIMOLE || "", 
-    quality: '85' 
+  useOptimole({
+    apiKey: process.env.REACT_APP_OPTIMOLE_KEY || "",
+    quality: "85",
   });
-
 
   const projects = [
     {
@@ -93,15 +90,15 @@ const Projects = () => {
 
               {/* Content */}
               <div className="relative z-10">
-                (OptimoleImage && 
-                 <OptimoleImage
-        src={project.img}
-        width={800}
-        height={600}
-        alt={project.title} 
-        className="h-[21rem] w-full bg-transparent"
-      />)
-               
+                {project.img && (
+                  <OptimoleImage
+                    src={project.img}
+                    width={800}
+                    height={600}
+                    alt={project.title}
+                    className="h-[21rem] w-full bg-transparent"
+                  />
+                )}
                 <h3 className="my-4 text-2xl font-bold text-white">
                   {project.title}
                 </h3>
@@ -111,10 +108,11 @@ const Projects = () => {
                 <div className="mb-6 text-lg md:text-xl">
                   {project.TechStack}
                 </div>
-
                 {/* Live Project Button */}
                 <motion.a
                   href={project.liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className={`inline-flex items-center space-x-2 bg-gradient-to-r ${project.gradient} rounded-lg px-6 py-3 font-medium text-white transition-all duration-300 hover:shadow-lg`}
