@@ -2,15 +2,24 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { ExternalLink } from "lucide-react";
-import EasyBank from "../utils/images";
+import { useOptimole } from '../utils/useOptimole';
+import OptimoleImage from './components/OptimoleImage';
+
 
 const Projects = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
+
+  useOptimole({ 
+    apiKey: process.env.REACT_APP_OPTIMOLE || "", 
+    quality: '85' 
+  });
+
+
   const projects = [
     {
-      img: "",
+      img: "https://mlskg9hbc4ct.i.optimole.com/w:auto/h:auto/q:auto/id:35143f525187a7b74ce0c712cf5808b0/directUpload/Screenshot_2-7-2025_41828_hospital-management-app-web.vercel.app_.jpeg",
       title: "Hospital Management",
       description: "An healthcare management system with role-based access",
       TechStack:
@@ -20,7 +29,7 @@ const Projects = () => {
       liveUrl: "#",
     },
     {
-      img: "",
+      img: "https://mlskg9hbc4ct.i.optimole.com/w:auto/h:auto/q:auto/id:e79257432520a37921039e5967747857/directUpload/Screenshot_2-7-2025_43210_shopify-kappa-blue.vercel.app_.jpeg",
       title: "Shopify Store",
       description:
         "E-commerce platform with modern design, user authentication, cart management, checkout process",
@@ -39,7 +48,7 @@ const Projects = () => {
       liveUrl: "#",
     },
     {
-      img: EasyBank,
+      img: "https://mlskg9hbc4ct.i.optimole.com/w:auto/h:auto/q:auto/id:c7543526b6ac3c1798c530e5cb4f0425/directUpload/Screenshot_2-7-2025_43028_easy-bank-rouge.vercel.app_.jpeg",
       title: "Easy Bank",
       description:
         "A website show casing the product and services of a Fintech bank",
@@ -84,11 +93,15 @@ const Projects = () => {
 
               {/* Content */}
               <div className="relative z-10">
-                <img
-                  className="h-[21rem] w-full bg-transparent"
-                  // src={project.img}
-                  alt={project.title}
-                />
+                (OptimoleImage && 
+                 <OptimoleImage
+        src={project.img}
+        width={800}
+        height={600}
+        alt={project.title} 
+        className="h-[21rem] w-full bg-transparent"
+      />)
+               
                 <h3 className="my-4 text-2xl font-bold text-white">
                   {project.title}
                 </h3>
