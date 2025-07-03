@@ -7,10 +7,26 @@ const Footer = () => {
   const [isBookingOpen, setIsBookingOpen] = useState(false);
 
   const socialLinks = [
-    { name: "GitHub", icon: "🐙", url: "#" },
-    { name: "LinkedIn", icon: "💼", url: "#" },
-    { name: "Twitter", icon: "🐦", url: "#" },
-    { name: "Email", icon: "✉", url: "mailto:oluwatobivictor430@gmail.com" },
+    {
+      name: "GitHub",
+      icon: "https://mlskg9hbc4ct.i.optimole.com/w:auto/h:auto/q:auto/id:74049a502a3e449609ce1a23bb2f5b4a/directUpload/github.png",
+      url: "#",
+    },
+    {
+      name: "LinkedIn",
+      icon: "https://mlskg9hbc4ct.i.optimole.com/w:auto/h:auto/q:auto/id:1892a5dc10b5ff8d78132edcd1964df0/directUpload/linkedIn.png",
+      url: "#",
+    },
+    {
+      name: "Twitter",
+      icon: "https://mlskg9hbc4ct.i.optimole.com/w:auto/h:auto/q:auto/id:01cd3a24de1a9fc3e3426e3e1b7470d6/directUpload/X.png",
+      url: "#",
+    },
+    {
+      name: "Email",
+      icon: "https://mlskg9hbc4ct.i.optimole.com/w:auto/h:auto/q:auto/id:1acae05fb80510d4ae81301ac5c59e1e/directUpload/gmail.png",
+      url: "mailto:oluwatobivictor430@gmail.com",
+    },
   ];
 
   return (
