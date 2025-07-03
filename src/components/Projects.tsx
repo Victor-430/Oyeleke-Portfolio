@@ -10,7 +10,8 @@ const Projects = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   useOptimole({
-    apiKey: process.env.REACT_APP_OPTIMOLE_KEY || "",
+    apiKey: import.meta.env.REACT_APP_OPTIMOLE_KEY || "",
+
     quality: "85",
   });
 
