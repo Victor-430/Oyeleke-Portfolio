@@ -97,7 +97,7 @@ const Projects = () => {
                     width={800}
                     height={600}
                     alt={project.title}
-                    className="h-[21rem] w-full bg-transparent"
+                    className="bg-gray-300"
                   />
                 )}
                 <h3 className="my-4 text-2xl font-bold text-white">
