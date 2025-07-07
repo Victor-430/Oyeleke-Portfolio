@@ -1,11 +1,20 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import OptimoleImage from "./OptimoleImage";
+
 
 const Collaborations = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
+useOptimole({
+    apiKey: import.meta.env.REACT_APP_OPTIMOLE_KEY || "",
+
+    quality: "85",
+  });
+
+  
   const roles = [
     "UI/UX Designer",
     "Backend Developer",
@@ -43,10 +52,14 @@ const Collaborations = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="rounded-2xl bg-[#1B4242] p-8"
           >
-            <img
-              className="h-[21rem] w-full bg-gray-300"
-              src={imgUrl}   alt="hospital management system"
-            />
+          <OptimoleImage
+                    src={imgUrl}
+                    width={800}
+                    height={600}
+                    alt="hospital management system"
+                    className="h-[21rem] w-full bg-gray-300"
+                  />
+            
             <h3 className="my-6 text-2xl font-bold text-[#9EC8B9]">
               Hospital Management System
             </h3>
