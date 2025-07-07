@@ -16,6 +16,8 @@ const Collaborations = () => {
     "Cloud Computing",
   ];
 
+  imgUrl = "https://mlskg9hbc4ct.i.optimole.com/w:auto/h:auto/q:auto/id:d3b9980d55a1abd36d949c6a125030db/directUpload/Screenshot_2-7-2025_42144_hospital-management-app-web.vercel.app_.jpeg"
+
   return (
     <section ref={ref} className="bg-[#092635] px-6 py-20">
       <div className="container mx-auto">
@@ -42,8 +44,8 @@ const Collaborations = () => {
             className="rounded-2xl bg-[#1B4242] p-8"
           >
             <img
-              className="h-[21rem] w-full bg-slate-500"
-              alt="hospital management system"
+              className="h-[21rem] w-full bg-gray-300"
+              src={imgUrl}   alt="hospital management system"
             />
             <h3 className="my-6 text-2xl font-bold text-[#9EC8B9]">
               Hospital Management System
