@@ -62,7 +62,11 @@ const Footer = () => {
                   whileTap={{ scale: 0.9 }}
                   className="flex h-12 w-12 items-center justify-center rounded-full bg-[#1B4242] text-2xl transition-all duration-300 hover:bg-gradient-to-r hover:from-[#5C8374] hover:to-[#9EC8B9]"
                 >
-                  {link.icon}
+                    <img
+                    src={link.icon}
+                    alt={link.name}
+                    className="h-6 w-6"
+                  />
                 </motion.a>
               ))}
             </motion.div>
