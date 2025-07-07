@@ -65,7 +65,7 @@ const Footer = () => {
                     <img
                     src={link.icon}
                     alt={link.name}
-                    className="h-6 w-6"
+                    className="h-6 w-8"
                   />
                 </motion.a>
               ))}
