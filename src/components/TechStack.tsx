@@ -20,7 +20,7 @@ const TechStack = () => {
       icon: "https://mlskg9hbc4ct.i.optimole.com/w:auto/h:auto/q:auto/id:d46858007aff22c805b0e36b8abfd30b/directUpload/typescript.png",
     },
     {
-      name: "",
+      name: "Next.js",
       icon: "https://mlskg9hbc4ct.i.optimole.com/w:auto/h:auto/q:auto/id:aeefbb42b7e54c9b4d119b27569bc36e/directUpload/Next.js_.png",
     },
     {
