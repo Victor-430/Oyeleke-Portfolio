@@ -53,10 +53,6 @@ const TechStack = () => {
           <h2 className="mb-6 bg-gradient-to-r from-[#5C8374] to-[#9EC8B9] bg-clip-text text-4xl font-bold text-transparent md:text-5xl">
             Technologies & Tools
           </h2>
-          {/* <p className="mx-auto max-w-2xl text-lg text-gray-300">
-            Here are the libraries, frameworks, and tools I use to bring ideas
-            to life
-          </p> */}
         </motion.div>
 
         <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
