@@ -1,20 +1,19 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import { useOptimole } from "@/utils/useOptimole";
 import OptimoleImage from "./OptimoleImage";
-
 
 const Collaborations = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
-useOptimole({
+  useOptimole({
     apiKey: import.meta.env.REACT_APP_OPTIMOLE_KEY || "",
 
     quality: "85",
   });
 
-  
   const roles = [
     "UI/UX Designer",
     "Backend Developer",
@@ -25,7 +24,8 @@ useOptimole({
     "Cloud Computing",
   ];
 
-  imgUrl = "https://mlskg9hbc4ct.i.optimole.com/w:auto/h:auto/q:auto/id:d3b9980d55a1abd36d949c6a125030db/directUpload/Screenshot_2-7-2025_42144_hospital-management-app-web.vercel.app_.jpeg"
+  const imgUrl =
+    "https://mlskg9hbc4ct.i.optimole.com/w:auto/h:auto/q:auto/id:d3b9980d55a1abd36d949c6a125030db/directUpload/Screenshot_2-7-2025_42144_hospital-management-app-web.vercel.app_.jpeg";
 
   return (
     <section ref={ref} className="bg-[#092635] px-6 py-20">
@@ -52,14 +52,14 @@ useOptimole({
             transition={{ duration: 0.8, delay: 0.2 }}
             className="rounded-2xl bg-[#1B4242] p-8"
           >
-          <OptimoleImage
-                    src={imgUrl}
-                    width={800}
-                    height={600}
-                    alt="hospital management system"
-                    className="h-[21rem] w-full bg-gray-300"
-                  />
-            
+            <OptimoleImage
+              src={imgUrl}
+              width={800}
+              height={600}
+              alt="hospital management system"
+              className="h-[21rem] w-full bg-gray-300"
+            />
+
             <h3 className="my-6 text-2xl font-bold text-[#9EC8B9]">
               Hospital Management System
             </h3>
