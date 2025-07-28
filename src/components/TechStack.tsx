@@ -9,11 +9,11 @@ const TechStack = () => {
   const technologies = [
     {
       name: "React",
-      icon: "https://mlskg9hbc4ct.i.optimole.com/w:auto/h:auto/q:auto/id:7f0479fc3fa14a80b03c1fd219cfe531/directUpload/react_img.png",
+      icon: "https://mlskg9hbc4ct.i.optimole.com/w:auto/h:auto/q:auto/id:1fb71c509c8fe73c4bb52a4beef439aa/directUpload/React.png",
     },
     {
       name: "Tailwind CSS",
-      icon: "https://mlskg9hbc4ct.i.optimole.com/w:auto/h:auto/q:auto/id:5bc4c108ad88574612cb06ca9df28490/directUpload/tailwind.png",
+      icon: "https://mlskg9hbc4ct.i.optimole.com/w:auto/h:auto/q:auto/id:8f60c50e90eefb37a24bc1529c8a0ccb/directUpload/Tailwind.png",
     },
     {
       name: "TypeScript",
@@ -21,7 +21,7 @@ const TechStack = () => {
     },
     {
       name: "Next.js",
-      icon: "https://mlskg9hbc4ct.i.optimole.com/w:auto/h:auto/q:auto/id:244570914f653568926f3405dec900d1/directUpload/next.js_.png",
+      icon: "https://mlskg9hbc4ct.i.optimole.com/w:auto/h:auto/q:auto/id:aeefbb42b7e54c9b4d119b27569bc36e/directUpload/Next.js_.png",
     },
     {
       name: "Postman",
