@@ -10,7 +10,7 @@ const Footer = () => {
     {
       name: "GitHub",
       icon: "https://mlskg9hbc4ct.i.optimole.com/w:auto/h:auto/q:auto/id:74049a502a3e449609ce1a23bb2f5b4a/directUpload/github.png",
-      url: "github.com/victor-430",
+      url: "https://github.com/Victor-430/",
     },
     {
       name: "LinkedIn",
