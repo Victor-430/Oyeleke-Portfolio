@@ -10,12 +10,12 @@ const Footer = () => {
     {
       name: "GitHub",
       icon: "https://mlskg9hbc4ct.i.optimole.com/w:auto/h:auto/q:auto/id:74049a502a3e449609ce1a23bb2f5b4a/directUpload/github.png",
-      url: "#",
+      url: "github.com/victor-430",
     },
     {
       name: "LinkedIn",
       icon: "https://mlskg9hbc4ct.i.optimole.com/w:auto/h:auto/q:auto/id:1892a5dc10b5ff8d78132edcd1964df0/directUpload/linkedIn.png",
-      url: "#",
+      url: "https://www.linkedin.com/in/oyeleke-victor/",
     },
     {
       name: "Twitter",
