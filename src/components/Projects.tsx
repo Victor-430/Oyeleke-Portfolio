@@ -37,7 +37,7 @@ const Projects = () => {
       liveUrl: "https://shopify-kappa-blue.vercel.app/",
     },
     {
-      img: "",
+      img: "https://mlskg9hbc4ct.i.optimole.com/w:auto/h:auto/q:auto/id:b163a2eadc364fb4cf8c3a827c5a2232/directUpload/IP-adress-tracker.jpg",
       title: "IP Locator",
       description: "Real-time IP address tracking and geolocation service",
       TechStack: "React, Tailwind CSS, Typescript",
