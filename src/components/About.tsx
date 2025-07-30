@@ -44,7 +44,7 @@ const About = () => {
                 always eager to learn new technologies and approaches.
               </p>
               <p className="mb-6 text-lg leading-relaxed text-gray-300">
-                I love frontend development because i able to convert visual
+                I love frontend development because i am able to convert visual
                 designs into a product that the user can interact with. Frontend
                 isn't just about coding for me, it is a way for me to express my
                 creativity and art to a wider audience.
