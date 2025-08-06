@@ -24,7 +24,7 @@ const Projects = () => {
         "Next.js, Typescript, Tailwind CSS, Framer motion, MongoDB, Express.js",
 
       gradient: "from-[#1B4242] to-[#5C8374]",
-      liveUrl: "https://hospital-management-system-eight-chi.vercel.app/",
+      liveUrl: "https://hospital-management-app-web.vercel.app/",
     },
     {
       img: "https://mlskg9hbc4ct.i.optimole.com/w:auto/h:auto/q:auto/id:e79257432520a37921039e5967747857/directUpload/Screenshot_2-7-2025_43210_shopify-kappa-blue.vercel.app_.jpeg",
